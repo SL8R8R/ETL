@@ -122,3 +122,5 @@ VALUES(?, ?, ?, ?, ?, ?);''')
 
     sal_sum = str(programmer_sum[1])
     print("Your programmers cost $" + sal_sum + " per year. Don't forget to pay them or they will be angry!")
+
+

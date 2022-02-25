@@ -48,6 +48,7 @@ VALUES(?, ?, ?, ?, ?, ?);''')
         WHERE salary = (SELECT max(salary) FROM employees);'''
     # LPE = lowest paid employee
     lpe = '''SELECT fname, lname, position, min(salary) FROM employees;'''
+    salary_sum = '''SELECT position, SUM(salary) FROM employees GROUP BY position;'''
 
     DropTable(cursor)
 
@@ -110,4 +111,12 @@ VALUES(?, ?, ?, ?, ?, ?);''')
 
     print("Your lowest paid employee is" + lname + "," + fname + ". This employee makes $" + sal + " annually. This employee was hired on as a" + pos + ".")
 
+    # Find the total salary of all programmers combined
 
+    programmer_salary = cursor.execute(salary_sum).fetchall()
+
+    print(type(programmer_salary))
+    programmer_sum = programmer_salary[0]
+    sal_sum = str(programmer_sum[2])
+
+    print(sal_sum)

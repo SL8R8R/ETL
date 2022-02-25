@@ -86,24 +86,21 @@ VALUES(?, ?, ?, ?, ?, ?);''')
     # salary is a list, lists have values stored in index positions
     # We are going to bind the value of salary index position 0 to variable tupe2
     position = cursor.execute(max_position).fetchall()
-    tupe2 = salary[0]
+    sal = salary[0]
     # Now that tupe2 has the value of index position of list salary_position[0]
     # Convert int to str for tupe2[0]
 
-    tupe2str = str(tupe2[0])
-    results = position[0]
-    pos1str = str(position[0])
+    tupe2str = str(sal[0])
+    result = position[0]
+    pos = str(result[0])
 
-    print(type(pos1str))
+    # print(type(pos1str))
 
-    print("Your highest paid employee makes $" + tupe2str + ". Their position with the company is " + pos1str)
+    print("Your highest paid employee makes $" + tupe2str + " annually. Their position with the company is" + pos + ".")
 
     # Find the employee with the lowest salary, the name of that employee, and what position they have with the company
 
     records = cursor.execute(lpe).fetchall()
-
-    # for item in records:
-    #     print(item)
 
     results = records[0]
     fname = str(results[0])
@@ -112,3 +109,5 @@ VALUES(?, ?, ?, ?, ?, ?);''')
     sal = str(results[3])
 
     print("Your lowest paid employee is" + lname + "," + fname + ". This employee makes $" + sal + " annually. This employee was hired on as a" + pos + ".")
+
+

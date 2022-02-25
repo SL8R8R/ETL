@@ -115,9 +115,6 @@ VALUES(?, ?, ?, ?, ?, ?);''')
 
     programmer_salary = cursor.execute(salary_sum).fetchall()
 
-    # print(type(programmer_salary))
-    # print(programmer_salary[5])
-
     programmer_sum = programmer_salary[5]
 
     sal_sum = str(programmer_sum[1])

@@ -115,8 +115,10 @@ VALUES(?, ?, ?, ?, ?, ?);''')
 
     programmer_salary = cursor.execute(salary_sum).fetchall()
 
-    print(type(programmer_salary))
-    programmer_sum = programmer_salary[0]
-    sal_sum = str(programmer_sum[2])
+    # print(type(programmer_salary))
+    # print(programmer_salary[5])
 
-    print(sal_sum)
+    programmer_sum = programmer_salary[5]
+
+    sal_sum = str(programmer_sum[1])
+    print("Your programmers cost $" + sal_sum + " per year. Don't forget to pay them or they will be angry!")

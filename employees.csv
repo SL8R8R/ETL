@@ -1,0 +1,11 @@
+empid, fname, lname, salary, position, startdate
+1, Jesse, Krizenesky, 145000, programmer, 11/01/2001
+2, James, Vargas, 85000, programmer, 03/02/2021
+3, Sally, Mae, 180000, banker, 05/19/2000
+4, Freddie, Mac, 150000, banker, 05/07/2001
+5, Colonel, Sanders, 35000, manager, 09/12/2003
+6, Crash, Bandicoot, 90000, programmer, 01/10/2003
+7, Mike, Hunt, 15000, jester, 06/09/2005
+8, Slick, Willy, 155000, sales, 05/19/2000
+9, President, Man, 1000000, bossman, 05/19/2000
+10, First, Lady, 350000, consultant, 07/22/2015

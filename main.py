@@ -94,6 +94,8 @@ VALUES(?, ?, ?, ?, ?, ?);''')
     results = position[0]
     pos1str = str(position[0])
 
+    print(type(pos1str))
+
     print("Your highest paid employee makes $" + tupe2str + ". Their position with the company is " + pos1str)
 
     # Find the employee with the lowest salary, the name of that employee, and what position they have with the company
